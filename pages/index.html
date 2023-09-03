@@ -8,12 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <title>index</title>
+    <title>IN JAPAN</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    
+    <div class="banner">
+      <div class="container h-100">
+          <div class="banner-text d-flex flex-column justify-content-center h-100">
+            <h1>探索日本，開啟屬於你的和式之旅。</h1>
+            <p>踏上日本之旅，啟程夢想之途，日本之美，等你親身體驗。</p>
+            <div class="banner-search">
+              <form class="d-flex">
+                <input class="w-50 p-2" type="search" placeholder="探索目的地、景點、行程" aria-label="Search"> 
+                <button class="btn btn-danger d-flex align-items-center" type="button">
+                  <span class="material-icons">
+                    search
+                  </span>
+                搜尋
+                </button>
+              </form>
+              
+            </div>  
+          </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
