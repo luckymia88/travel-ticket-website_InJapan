@@ -4,3 +4,50 @@
   background-position: center -60px;
   height: calc(100vh - 66px);
 }
+
+.main-event {
+  .card {
+    overflow: hidden;
+    img {
+    &:hover {
+      transform: scale(1.1);
+      }
+    } 
+  }
+}
+
+.top10 {
+  .card {
+      overflow: hidden;
+      img {
+      height: 214px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.popular {
+  .card {
+    overflow: hidden;
+    img {
+    height: 214px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+}
+
+.popular-cities {
+  .card {
+    overflow: hidden;
+    img {
+    height: 200px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+}
