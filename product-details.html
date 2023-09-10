@@ -19,415 +19,110 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="data:image/png;base64,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" alt="in japan logo" height="40">
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item me-2">
-                    <a class="nav-link active link-secondary text-dark" aria-current="page" href="#">
-                        <span class="material-icons">
-                            shopping_cart
-                        </span>
+                </a>
+                <form class="d-flex justify-content-between border border-2 rounded p-1 w-25">
+                    <input class="border-0 w-100" type="search" placeholder="探索目的地、景點、行程" aria-label="Search">
+                    <a href="#" class="d-flex link-danger">
+                        <span class="material-icons">search</span> 
                     </a>
-                  </li>
-                  <li class="nav-item me-3">
-                    <a class="nav-link link-secondary text-dark" href="#">註冊</a>
-                  </li>
-                  <li class="nav-item">
-                    <button class="btn btn-danger" type="submit">登入</button>
-                  </li>
-                </ul>
-              </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-2">
+                            <a class="nav-link active link-secondary text-dark" aria-current="page" href="#">
+                                訂單管理
+                            </a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link active link-secondary text-dark" aria-current="page" href="#">
+                                <span class="material-icons">
+                                    favorite
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item me-2">
+                        <a class="nav-link active link-secondary text-dark" aria-current="page" href="#">
+                            <span class="material-icons">
+                                shopping_cart
+                            </span>
+                        </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link link-secondary text-dark" href="#">註冊</a>
+                        </li>
+                        <li class="nav-item">
+                        <button class="btn btn-danger" type="submit">登入</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </div>
 </div>
 
-    <div class="banner">
-      <div class="container h-100">
-          <div class="banner-text d-flex flex-column justify-content-center h-100">
-            <h1>探索日本，開啟屬於你的和式之旅。</h1>
-            <p>踏上日本之旅，啟程夢想之途，日本之美，等你親身體驗。</p>
-            <div class="banner-search">
-              <form class="d-flex">
-                <input class="w-50 p-2" type="search" placeholder="探索目的地、景點、行程" aria-label="Search"> 
-                <button class="btn btn-danger d-flex align-items-center" type="button" onclick='location.href=("products.html")'>
-                  <span class="material-icons">search</span>
-                搜尋
-                </button>
-              </form>
-              
-            </div>  
-          </div>
-      </div>
+   <div class="container">
+    <div class="info-img mt-6">
     </div>
-
-    <div class="main-event">
-        <div class="container">
-          <h2 class="mt-10 h3">主打活動 現正優惠中</h2>
-          <div class="row">
-            <div class="col">
-              <div class="card border-0 mt-6">
-                <a href="#">
-                  <img src="/travel-ticket-website_InJapan/assets/okinawa-58682423.avif" class="card-img-top rounded" style="height: 160px;" alt="okinawa beach">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title card-link text-center h4">
-                    <a href="#" class="text-dark link-secondary">沖繩海岸樂活優惠</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 mt-6">
-                <a href="#">
-                  <img src="/travel-ticket-website_InJapan/assets/mainevent2-8d27e61a.jpg" class="card-img-top rounded" style="height: 160px;" alt="okinawa beach">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title card-link text-center h4">
-                    <a href="#" class="text-dark link-secondary">盛夏狂歡，京都祭典之旅</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 mt-6">
-                <a href="#">
-                  <img src="/travel-ticket-website_InJapan/assets/mainevent3-032f6a35.jpg" class="card-img-top rounded" style="height: 160px;" alt="maple leaf">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title card-link text-center h4">
-                    <a href="#" class="text-dark link-secondary">早鳥賞楓，秋季限定特價</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="row mt-4">
+      <div class="col-8">
+        <div class="title d-flex p-4">
+          <h2>大阪環球影城門票 Universal Studios Japan｜日本大阪</h2>
+          <span class="material-icons ms-10 text-danger">
+            favorite
+          </span>
         </div>
-          
-
-    </div>
-
-    <div class="top10">
-      <div class="container">
-        <h2 class="mt-10 h3">TOP 10 熱銷行程</h2>
-        <div class="row row-cols-1 row-cols-lg-4">
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/top10_1-379401c4.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="product-details.html" class="text-dark link-secondary">大阪環球影城門票</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <span class="badge rounded-pill bg-secondary">即買即用</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・100K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 1999起</h5>
-              </div>
+        <div class="title-text px-4">
+          <p class="d-flex"><span class="material-icons">location_on</span>日本-大阪</p>
+          <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+            <span class="material-icons text-warning" style="font-size: 22px;">
+              star
+            </span>
+            <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+            ・100K＋已訂購
+          </p>
+          <p class="d-flex">
+            <span class="material-icons me-1">flash_on</span> <span class="me-6">即買即用</span>
+            <span class="material-icons me-1">phone_iphone</span> <span class="me-6">現場出示電子憑證</span>
+            <span class="material-icons me-1">event_available</span> <span>有效期內皆可兌換</span>
+          </p>
+        </div>
+        <div class="plan px-4 mt-10">
+          <h3>方案選擇</h3>
+          <div class="plan-box bg-light p-6 border rounded mt-4">
+            <h4>普通票</h4>
+            <p class="mt-10">選擇數量</p>
+            <div class="plan-choice d-flex justify-content-between fw-bold h4 mt-10">
+              <p>每人</p>
+              <p class="d-flex">NT$ 1988 
+                <span class="material-icons ms-4 text-secondary">remove_circle_outline</span>
+                <span class="ms-4">1</span>
+                <span class="material-icons ms-4 text-danger">add_circle_outline</span> 
+              </p>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div class="h-50">
-                <img src="/travel-ticket-website_InJapan/assets/top10_2-802119ee.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios">
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">東京迪士尼樂園門票</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <span class="badge rounded-pill bg-secondary">即買即用</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・100K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 1988起</h5>
-              </div>
+            <hr>
+            <div class="plan-price d-flex justify-content-between">
+              <p>總金額</p>
+              <p class="h3 text-danger">NT$ 1988</p>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/top10_3-246dba43.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios">
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">關西周遊卷2日卷/3
-                    日卷-關西機場領取</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <span class="badge rounded-pill bg-secondary">即買即用</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.8</span>
-                  ・80K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 999起</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/top10_4-df61101b.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">東京華納兄弟哈利波
-                    特影城門票</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <span class="badge rounded-pill bg-secondary">即買即用</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・50K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 1399起</h5>
-              </div>
+            <div class="plan-btn d-flex justify-content-end">
+              <button type="button" class="btn btn-warning text-white mt-4 me-2">加入購物車</button>
+              <button type="button" class="btn btn-danger mt-4">立即訂購</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="popular pt-10">
-      <div class="container">
-        <h2 class="mt-10 h3">人氣精選</h2>
-        <div class="row row-cols-1 row-cols-lg-4">
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/Nara-b6c05bf2.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios">
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">京都＆奈良一日遊</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・66K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 2166起</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div class="h-50">
-                <img src="/travel-ticket-website_InJapan/assets/okinawa2-7b69a9c2.jpeg" class="card-img-top position-relative img-fluid" alt="Universal studios">
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">沖繩景點通票</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・33K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 888起</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/kimono-70357381.jpeg" class="card-img-top position-relative img-fluid" alt="Universal studios">
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">京都和服租賃</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・20K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 999起</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mt-6 h-100">
-              <div>
-                <img src="/travel-ticket-website_InJapan/assets/simcard-e3ce2844.jpeg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
-                <a href="#">
-                  <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
-                    favorite
-                  </span>
-                </a>
-              </div>
-              
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#" class="text-dark link-secondary">日本網卡| 吃到飽/
-                    500M/1G eSIM卡</a>
-                </h5>
-                <span class="badge rounded-pill bg-secondary">熱賣中</span>
-                <span class="badge rounded-pill bg-secondary">即買即用</span>
-                <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
-                  <span class="material-icons text-warning" style="font-size: 22px;">
-                    star
-                  </span>
-                  <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
-                  ・10K＋已訂購
-                </p>
-              </div>
-              <div class="card-footer bg-transparent border-success border-0 mt-6">
-                <h5>NT$ 699起</h5>
-              </div>
-            </div>
-          </div>
+      <div class="col-4">
+        <div class="price p-6 d-flex justify-content-center flex-column border rounded">
+          <h3>NT$ 1988</h3>
+          <button type="button" class="btn btn-danger mt-4">選擇方案</button>
         </div>
       </div>
     </div>
+   </div>
 
-    <div class="popular-cities pt-10">
-      <div class="container">
-        <h2 class="mt-10 h3">探索熱門城市</h2>
-        <div class="row">
-          <div class="col">
-            <div class="card bg-dark text-white mt-6">
-                <a href="products.html">
-                  <img src="/travel-ticket-website_InJapan/assets/tokyo-1ed428a9.jpeg" class="card-img position-relative" alt="tokyo">
-                </a>
-              <div class="card-city ms-2">
-                <h3 class="card-title position-absolute bottom-0">
-                  <a href="products.html">東京</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card bg-dark text-white mt-6">
-              <a href="products.html">
-                <img src="/travel-ticket-website_InJapan/assets/Kyoto-89de389c.jpeg" class="card-img" alt="tokyo">
-              </a>
-              <div class="card-city ms-2">
-                <h3 class="card-title position-absolute bottom-0">
-                  <a href="products.html">京都</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card bg-dark text-white mt-6">
-              <a href="products.html">
-                <img src="/travel-ticket-website_InJapan/assets/osaka-05d0cf7b.jpeg" class="card-img" alt="tokyo">
-              </a>
-              <div class="card-city ms-2">
-                <h3 class="card-title position-absolute bottom-0">
-                  <a href="products.html">大阪</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card bg-dark text-white mt-6">
-              <a href="products.html">
-                <img src="/travel-ticket-website_InJapan/assets/okinawa-58682423.avif" class="card-img" alt="tokyo">
-              </a>
-              <div class="card-city ms-2">
-                <h3 class="card-title position-absolute bottom-0">
-                  <a href="products.html">沖繩</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card bg-dark text-white mt-6">
-              <a href="products.html">
-                <img src="/travel-ticket-website_InJapan/assets/sapporo-4bb54c33.jpeg" class="card-img" alt="tokyo">
-              </a>
-              <div class="card-city ms-2">
-                <h3 class="card-title position-absolute bottom-0">
-                  <a href="products.html">札幌</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <footer>
     <div class="footer-menu mt-10 bg-light border">
         <div class="container">
