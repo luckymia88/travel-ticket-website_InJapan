@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>IN JAPAN</title>
+  </head>
+  <body>
+    <%- include('./layout/header_search'); -%>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <div class="list border border-secondary p-4">
+                    <h4>目的地</h4>
+                    <ul class="list-group ms-12">
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="東京" aria-label="東京">
+                          東京
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="京都" aria-label="京都">
+                          京都
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="大阪" aria-label="大阪">
+                          大阪
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="沖繩" aria-label="沖繩">
+                          沖繩
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="北海道" aria-label="北海道">
+                          北海道
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="札幌" aria-label="札幌">
+                            札幌
+                        </li>
+
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="奈良" aria-label="奈良">
+                            奈良
+                        </li>
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="名古屋" aria-label="名古屋">
+                            名古屋
+                        </li>
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="神戶" aria-label="神戶">
+                            神戶
+                        </li>
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="橫濱" aria-label="橫濱">
+                            橫濱
+                        </li>
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="熊本" aria-label="熊本">
+                            熊本
+                        </li>
+                        <li class="collapse list-group-item border-0 p-1" id="jp-cities">
+                            <input class="form-check-input me-1" type="checkbox" value="仙台" aria-label="仙台">
+                            仙台
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#jp-cities" aria-expanded="false" aria-controls="jp-cities">
+                        查看更多
+                      </button>
+                      <hr>
+                      <h4>活動分類</h4>
+                    <ul class="list-group ms-12">
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="景點門票" aria-label="景點門票">
+                          景點門票
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="觀光行程" aria-label="觀光行程">
+                          觀光行程
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="交通票券" aria-label="交通票券">
+                          交通票券
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="Wi-Fi&SIM卡" aria-label="Wi-Fi&SIM卡">
+                          Wi-Fi&SIM卡
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="體驗活動" aria-label="體驗活動">
+                          體驗活動
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="手作課程" aria-label="手作課程">
+                            手作課程
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="美食餐券" aria-label="美食餐券">
+                            美食餐券
+                        </li>
+                        <li class="list-group-item border-0 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="舒壓&放鬆" aria-label="舒壓&放鬆">
+                            舒壓&放鬆
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row row-cols-3 gy-7">
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mt-6 h-100">
+                            <div>
+                              <img src="/assets/images/top10_1.jpg" class="card-img-top position-relative img-fluid" alt="Universal studios" >
+                              <a href="#">
+                                <span class="material-icons position-absolute top-0 end-0 h2 link-secondary">
+                                  favorite
+                                </span>
+                              </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#" class="text-dark link-secondary">大阪環球影城門票</a>
+                              </h5>
+                              <span class="badge rounded-pill bg-secondary">熱賣中</span>
+                              <span class="badge rounded-pill bg-secondary">即買即用</span>
+                              <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+                                <span class="material-icons text-warning" style="font-size: 22px;">
+                                  star
+                                </span>
+                                <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+                                ・100K＋已訂購
+                              </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-success border-0 mt-6">
+                              <h5>NT$ 1999起</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <nav aria-label="Page navigation" class="d-flex justify-content-center align-items-center mt-8">
+                            <ul class="pagination pagination-lg">
+                              <li class="page-item">
+                                <a class="page-link border-0 text-dark" href="#" aria-label="Previous">
+                                    <span class="material-icons mt-1">chevron_left</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link border-0 text-dark" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link border-0 text-dark" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link border-0 text-dark" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link border-0 text-dark" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link border-0 text-dark" href="#">5</a></li>
+                              <li class="page-item">
+                                <a class="page-link border-0 text-dark" href="#" aria-label="Next">
+                                    <span class="material-icons mt-1">navigate_next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

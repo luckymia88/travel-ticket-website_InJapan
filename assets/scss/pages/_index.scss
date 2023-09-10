@@ -47,7 +47,15 @@
     height: 200px;
     &:hover {
       transform: scale(1.1);
+      }
+    }
+    .card-city {
+      a {
+        color: #ffffff;
+        &:hover {
+          color: #ffffffcc;
+        }
+      }
     }
   }
-}
 }
