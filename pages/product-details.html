@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>IN JAPAN</title>
+  </head>
+  <body>
+    <%- include('./layout/header_search'); -%>
+
+   <div class="container">
+    <div class="info-img mt-6">
+    </div>
+    <div class="row mt-4">
+      <div class="col-8">
+        <div class="title d-flex p-4">
+          <h2>大阪環球影城門票 Universal Studios Japan｜日本大阪</h2>
+          <span class="material-icons ms-10 text-danger">
+            favorite
+          </span>
+        </div>
+        <div class="title-text px-4">
+          <p class="d-flex"><span class="material-icons">location_on</span>日本-大阪</p>
+          <p class="card-text mt-2 d-flex fs-6 text-secondary" style="font-size: 14px;">
+            <span class="material-icons text-warning" style="font-size: 22px;">
+              star
+            </span>
+            <span class="text-warning fw-bold fs-6" style="font-size: 14px;">4.9</span>
+            ・100K＋已訂購
+          </p>
+          <p class="d-flex">
+            <span class="material-icons me-1">flash_on</span> <span class="me-6">即買即用</span>
+            <span class="material-icons me-1">phone_iphone</span> <span class="me-6">現場出示電子憑證</span>
+            <span class="material-icons me-1">event_available</span> <span>有效期內皆可兌換</span>
+          </p>
+        </div>
+        <div class="plan px-4 mt-10">
+          <h3>方案選擇</h3>
+          <div class="plan-box bg-light p-6 border rounded mt-4">
+            <h4>普通票</h4>
+            <p class="mt-10">選擇數量</p>
+            <div class="plan-choice d-flex justify-content-between fw-bold h4 mt-10">
+              <p>每人</p>
+              <p class="d-flex">NT$ 1988 
+                <span class="material-icons ms-4 text-secondary">remove_circle_outline</span>
+                <span class="ms-4">1</span>
+                <span class="material-icons ms-4 text-danger">add_circle_outline</span> 
+              </p>
+            </div>
+            <hr>
+            <div class="plan-price d-flex justify-content-between">
+              <p>總金額</p>
+              <p class="h3 text-danger">NT$ 1988</p>
+            </div>
+            <div class="plan-btn d-flex justify-content-end">
+              <button type="button" class="btn btn-warning text-white mt-4 me-2">加入購物車</button>
+              <button type="button" class="btn btn-danger mt-4">立即訂購</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="price p-6 d-flex justify-content-center flex-column border rounded">
+          <h3>NT$ 1988</h3>
+          <button type="button" class="btn btn-danger mt-4">選擇方案</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
