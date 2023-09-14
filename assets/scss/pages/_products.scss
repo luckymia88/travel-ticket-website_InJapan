@@ -1,0 +1,11 @@
+.item {
+    .card {
+        overflow: hidden;
+        img {
+        height: 214px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+}
